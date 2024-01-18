@@ -462,7 +462,8 @@
           <p class="subscribe-text">Subscribe</p>
           <form class="footer-form" autocomplete="off">
             <label class="subscribe-label">
-              <input class="form-mail"
+              <input
+                class="form-mail"
                 type="email"
                 name="email-subscribe"
                 placeholder="E-mail"
@@ -533,7 +534,6 @@
               </svg>
             </div>
           </div>
-
           <div class="modal-wrapper form">
             <label class="form-label" for="user-comment">Comment</label>
             <textarea
@@ -543,23 +543,33 @@
               rows="5"
               placeholder="Text input"
             ></textarea>
-<div class="checkbox-container">
-            </div class="checkbox-privacy">
-              <input
+          </div>
+          <div class="checkbox-privacy">
+            <input
+              class="modal-privacy visually-hidden"
               id="user-privacy"
               type="checkbox"
-               value="true"
-               name="user-privacy"
-               class="checkbox-container visually-hidden"
-              />
-            <label class="checkbox-label" for="user-privacy">
-              <input type="checkbox" name="user_agreement" value="true" />
-              I accept the terms and conditions of the
-                <span class="checkbox-custom">
-                <svg class="checkbox-icon" width="10" height="8" class="checkbox-icon">
+              value="true"
+              name="user-privacy"
+            />
+            <label
+              class="checkbox-label"
+              for="user-privacy"
+              type="checkbox"
+              name="user_agreement"
+              value="true"
+            >
+              <span class="checkbox-custom">
+                <svg
+                  class="checkbox-icon"
+                  width="10"
+                  height="8"
+                  class="checkbox-icon"
+                >
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
+              I accept the terms and conditions of the
               <a
                 href=""
                 target="_blank"
@@ -569,7 +579,8 @@
                 Privacy Policy
               </a>
             </label>
-</div>
+          </div>
+
           <button class="btn-sent" type="submit">Sent</button>
         </form>
       </div>

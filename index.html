@@ -461,5 +461,83 @@
       </div>
     </footer>
     <!-- #endregion Footer -->
+    <!-- #region Modal window -->
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="btn-close" type="button">
+          <svg class="close-icon" width="" height="">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form" name="modal form">
+          <div class="modal-wrapper">
+            <label class="form-label" for="username">Name</label>
+            <div class="modal-form-wrapper">
+              <input
+                class="input-form"
+                type="text"
+                name="username"
+                id="username"
+              />
+              <svg class="icon-form" width="" height="">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-wrapper">
+            <label class="form-label" for="user_phone">Phone</label>
+            <div class="modal-form-wrapper">
+              <input
+                class="input-form"
+                type="phone"
+                name="user_phone"
+                id="user_phone"
+              />
+              <svg class="icon-form" width="" height="">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-wrapper">
+            <label class="form-label" for="user_email">Name</label>
+            <div class="modal-form-wrapper">
+              <input
+                class="input-form"
+                type="email"
+                name="user_email"
+                id="user_email"
+              />
+              <svg class="icon-form" width="" height="">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-wrapper">
+            <label for="user_review">Comment</label>
+            <textarea
+              name="user_review"
+              id="user_review"
+              rows="5"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+          <label>
+            <input type="checkbox" name="user_agreement" value="true" />
+            I accept the terms and conditions of the
+            <a href="" target="_blank" rel="noopener noreferrer">
+              Privacy Policy
+            </a>
+          </label>
+
+          <button class="btn-sent" type="submit">Sent</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- #endregion Modal window  -->
   </body>
 </html>
